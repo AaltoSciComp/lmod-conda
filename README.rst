@@ -15,12 +15,13 @@ This provides Lmod modulefiles which allow Lmod to natively activate and deactiv
 
 Currently two options under development:
 
-* ``miniconda.lua`` - a modulefile which sources the ``activate`` and
-  ``deactivate`` scripts, so completly uses the conda machinery.  This
+* ``conda.lua`` - a modulefile which sources the upstream ``activate`` and
+  ``deactivate`` scripts, so completely uses the conda machinery.  This
   leaves some effects in the user's shell once conda is deactivated.
 
-* ``miniconda2.lua`` - reproduces the logic of conda in native Lmod.
-  Doesn't leave as much effect in the user's shell.  To use this, the
+* ``conda2.lua`` - reproduces the logic of conda in native Lmod.
+  Doesn't leave as much effect in the user's shell.  To use this,
+  conda's ``/etc/profile.d/conda.sh``
   ``conda.sh`` has to be put next to the modulefile.
 
 Usage notes
