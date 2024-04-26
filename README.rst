@@ -1,6 +1,10 @@
 Conda integraiton for Lmod
 ==========================
 
+*You might want to see the more recent discussion at
+https://github.com/conda/conda/issues/11087 , which has more modern
+solutions for more cases.*
+
 You use Lmod to manage software, and you also deploy software using
 conda.  You want to use Lmod to allow people ta activate your conda
 environments, but it's actually a bit more difficult than you'd like:
@@ -65,6 +69,7 @@ programs but not for users to ``conda create`` and ``conda activate``.
 See also
 --------
 
+* Relevant issue with Lmod .lua that works directly: https://github.com/conda/conda/issues/11087
 * Lmod: https://lmod.readthedocs.io/en/latest/050_lua_modulefiles.html
 * Conda: https://docs.conda.io/
 
